@@ -121,6 +121,26 @@ footer {
 	padding: 5rem 0;
 }
 
+.go-back {
+	position: fixed;
+	left: 20px;
+	width: 100px;
+	background: grey;
+	text-align: center;
+	padding: 15px 0;
+	opacity: 0.05;
+}
+
+.go-back a {
+	color: white;
+	text-decoration: none;
+}
+
+.go-back:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px) {
 
 	.product {
@@ -143,7 +163,7 @@ footer {
 		max-width: 760px;
 	}
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 470px) {
 
 	.banner {
 		height: 15rem;
