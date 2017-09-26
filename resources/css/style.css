@@ -23,7 +23,7 @@ header .container {
 	margin: 0 auto;
 }
 
-.container img {
+header img {
 	height: 1.5rem;
 	padding-right: 1rem;
 }
@@ -41,6 +41,7 @@ header .container {
 	padding: 2em 3em;
 	position: relative;
 	top: 9rem;
+	font-weight: bold;
 }
 
 nav {
@@ -56,7 +57,11 @@ nav ul {
 	list-style: none;
 }
 
-
+.menu {
+	display: none;
+	text-align: center;
+	padding: 0.75em 0;
+}
 
 .products {
 	display: flex;
@@ -90,19 +95,17 @@ nav ul {
 	text-align: center;
 }
 
-.location, .hours {
-	width: 35%;
-}
-
-
-
 .business-info {
 	margin-bottom: 4rem;
 	display: flex;
 	justify-content: space-between;
 }
 
-.business-info span {
+.item {
+	width: 35%;
+}
+
+.item span {
 	display: block;
 }
 
@@ -118,8 +121,74 @@ footer {
 	padding: 5rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
 
+	.product {
+		width: 47%;
+	}
 
+	.glasses {
+		display: none;
+	}
+
+	.full-menu {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.container {
+		max-width: 760px;
+	}
+
+@media only screen and (max-width: 510px) {
+
+	.banner {
+		height: 15rem;
+	}
+
+	.headline {
+	   width: 100%;
+	   padding: 1rem 2rem;
+	   line-height: 0.5rem;
+    }
+
+    .headline h1 {
+    	font-size: 1rem;
+    }
+
+    .headline h4 {
+    	font-size: 0.77rem;
+    }
+
+    .watch {
+    	display: none;
+    }
+
+    .product {
+    	width: 90%;
+    }
+
+    .products {
+    	justify-content: center;
+    }
+
+    .business-info {
+    	flex-direction: column;
+    	align-items: center;
+    }
+
+    .item {
+    	margin-top: 0.5rem;
+    	width: 90%;
+    }
+
+    footer {
+    	text-align: center;
+    }
+}
 
 
 
